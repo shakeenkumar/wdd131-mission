@@ -38,7 +38,7 @@ header h1 {
 
 header h2 {
     font-size: 1.2em;
-    color: #006EB6;
+    color: #006EB6; /* Light blue color for light theme */
     font-style: italic;
     margin-bottom: 20px;
 }
@@ -73,6 +73,7 @@ footer {
 footer img {
     width: 120px;
 }
+
 /* Dark theme styles */
 .dark {
     background-color: #333;
