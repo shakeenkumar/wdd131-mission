@@ -10,7 +10,7 @@ body {
     font-family: "Arial", sans-serif; /* Changed to a more modern font */
     font-size: 18px;
     line-height: 1.6;
-    background-color: #2b2a2a;
+    background-color: #ffffff;
     color: #000000;
     margin: 0;
     padding: 0;
@@ -81,7 +81,7 @@ footer img {
 /* Dark theme styles */
 .dark {
     background-color: #333; /* Dark background */
-    color: rgb(65, 63, 63); /* White text */
+    color: rgb(37, 35, 35); /* White text */
 }
 
 .dark h2 {
