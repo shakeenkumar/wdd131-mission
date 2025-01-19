@@ -7,40 +7,43 @@
 
 /* Body Styling */
 body {
-    font-family: "Times New Roman", Times, serif;
-    font-size: 20px;
+    font-family: "Arial", sans-serif; /* Changed to a more modern font */
+    font-size: 18px;
     line-height: 1.6;
     background-color: #ffffff;
     color: #000000;
     margin: 0;
     padding: 0;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
 }
 
 /* Container Styling */
 .container {
-    max-width: 600px;
+    max-width: 800px;
     margin: 50px auto;
     padding: 30px;
     border: 1px solid #ddd;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     background-color: #ffffff;
     text-align: center;
+    transition: all 0.3s ease; /* Smooth transitions */
 }
 
 /* Header Styling */
 header h1 {
-    font-size: 2em;
+    font-size: 2.5em;
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 2px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 header h2 {
-    font-size: 1.2em;
-    color: #006EB6; /* Light blue color for light theme */
+    font-size: 1.5em;
+    color: #006EB6; /* Light blue for readability in light theme */
     font-style: italic;
     margin-bottom: 20px;
+    transition: color 0.3s ease; /* Smooth transitions for color change */
 }
 
 /* Main Content Styling */
@@ -71,21 +74,30 @@ footer {
 }
 
 footer img {
-    width: 120px;
+    width: 140px;
+    transition: all 0.3s ease; /* Smooth transition for logo */
 }
 
 /* Dark theme styles */
 .dark {
-    background-color: #333;
-    color: #ffffff;
+    background-color: #181818; /* Darker background for better contrast */
+    color: #f0f0f0; /* Light text for better readability */
 }
 
-/* For the subtitle (h2) inside the dark theme */
-.dark h2 {
-    color: #00A9E0; /* A lighter blue color with better contrast */
+/* Dark theme header styles */
+.dark header h2 {
+    color: #00A9E0; /* Light blue for dark theme for better contrast */
 }
 
-/* For the logo inside the dark theme */
+/* Dark theme logo styling */
 .dark #logo {
-    content: url("byui-logo-white.png"); /* Logo with white text for dark theme */
+    content: url("byui-logo-white.png"); /* Switch logo to white logo */
+}
+
+/* Select styling */
+#theme-selector {
+    padding: 10px;
+    font-size: 16px;
+    margin: 20px 0;
+    cursor: pointer;
 }
