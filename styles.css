@@ -23,7 +23,7 @@ body {
     margin: 50px auto;
     padding: 30px;
     border: 1px solid #ddd;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(235, 231, 231, 0.1);
     background-color: #ffffff;
     text-align: center;
     transition: all 0.3s ease; /* Smooth transitions */
@@ -80,7 +80,7 @@ footer img {
 
 /* Dark theme styles */
 .dark {
-    background-color: #333; /* Dark background */
+    background-color: #121212; /* Dark background */
     color: rgb(37, 35, 35); /* White text */
 }
 
