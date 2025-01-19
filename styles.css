@@ -11,7 +11,7 @@ body {
     font-size: 18px;
     line-height: 1.6;
     background-color: #ffffff;
-    color: #f2ecec;
+    color: #0f0e0e;
     margin: 0;
     padding: 0;
     transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
