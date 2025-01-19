@@ -1,79 +1,40 @@
-/* Global Styles */
 body {
-    font-family: "Times New Roman", Times, serif;
-    font-size: 20px;
-    line-height: 1.5;
+    font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
-    background-color: #fff;
-    color: #000;
-}
-
-/* Center container and add spacing */
-.container {
-    max-width: 600px;
-    margin: 20px auto;
     padding: 20px;
-    border: 1px solid #ccc;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
+    background-color: #fff; /* Light theme background */
+    color: #000; /* Light theme text color */
 }
 
-/* Header Styles */
-header h1 {
-    font-size: 1.8em;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-bottom: 10px;
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-header h2 {
-    font-size: 1.2em;
-    text-align: center;
-    color: #006EB6;
-    letter-spacing: 1px;
-    margin-top: 0;
+h1 {
+    margin: 0;
 }
 
-/* Main Content Styles */
-main p {
-    text-align: justify;
+h2 {
+    margin: 10px 0;
+    color: #006EB6; /* Default blue color for subtitle in light theme */
 }
 
-main ol {
-    margin-left: 20px;
-    padding-left: 0;
+/* Dark theme styles */
+.dark {
+    background-color: #333; /* Dark background */
+    color: white; /* White text */
 }
 
-main ol li {
-    margin-bottom: 10px;
+.dark h2 {
+    color: #A8D8EA; /* Lighter blue for subtitle in dark theme */
 }
 
-/* Footer Styles */
-footer {
-    text-align: center;
-    margin-top: 20px;
+.dark #logo {
+    content: url('byui-logo-white.png'); /* Placeholder for white logo */
 }
 
 footer img {
-    width: 150px;
-}
-
-/* Dark Theme Styles */
-body.dark {
-    background-color: #333;
-    color: white;
-}
-
-body.dark header h1, body.dark main, body.dark footer {
-    color: white;
-}
-
-body.dark h2 {
-    color: #4BA3D1; /* Light blue for better contrast */
-}
-
-body.dark footer img {
-    content: url("byui-logo-white.png"); /* Ensure white logo image is present */
+    max-width: 100%; /* Ensure logo fits well */
 }
