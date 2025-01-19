@@ -11,7 +11,7 @@ body {
     font-size: 18px;
     line-height: 1.6;
     background-color: #ffffff;
-    color: #0f0e0e;
+    color: #faf6f6;
     margin: 0;
     padding: 0;
     transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
@@ -81,7 +81,7 @@ footer img {
 /* Dark theme styles */
 .dark {
     background-color: #121212; /* Dark background */
-    color: rgb(37, 35, 35); /* White text */
+    color: rgb(247, 241, 241); /* White text */
 }
 
 .dark h2 {
