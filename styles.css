@@ -1,40 +1,137 @@
+/* Base Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Georgia", Times, serif;
+    font-size: 20px;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+    text-rendering: optimizeLegibility;
     margin: 0;
-    padding: 20px;
-    background-color: #fff; /* Light theme background */
-    color: #000; /* Light theme text color */
+    padding: 0;
 }
 
-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+/* Container for Content */
+.container {
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
 }
 
-h1 {
-    margin: 0;
+/* Theme Selector Dropdown */
+.theme-selector {
+    text-align: right;
+    margin-bottom: 20px;
+    font-size: 16px;
 }
 
-h2 {
-    margin: 10px 0;
-    color: #006EB6; /* Default blue color for subtitle in light theme */
+.theme-selector label {
+    margin-right: 10px;
+    font-weight: bold;
+    color: #555;
 }
 
-/* Dark theme styles */
-.dark {
-    background-color: #333; /* Dark background */
-    color: white; /* White text */
+.theme-selector select {
+    padding: 5px 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
-.dark h2 {
-    color: #A8D8EA; /* Lighter blue for subtitle in dark theme */
+/* Header Styles */
+header h1 {
+    font-size: 2.5em;
+    text-align: center;
+    text-transform: uppercase;
+    color: #222;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
 }
 
-.dark #logo {
-    content: url('byui-logo-white.png'); /* Placeholder for white logo */
+header h2 {
+    font-size: 1.5em;
+    text-align: center;
+    color: #006EB6; /* Default BYUI blue */
+    font-style: italic;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+/* Main Content Styles */
+main p {
+    margin-bottom: 20px;
+    text-align: justify;
+    color: #444;
+}
+
+main em {
+    font-weight: bold;
+    color: #222;
+}
+
+main ol {
+    list-style: decimal inside;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+main ol li {
+    margin-bottom: 15px;
+    padding-left: 10px;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    margin-top: 30px;
 }
 
 footer img {
-    max-width: 100%; /* Ensure logo fits well */
+    width: 120px;
+    transition: transform 0.3s ease;
+}
+
+footer img:hover {
+    transform: scale(1.1);
+}
+
+/* Dark Theme */
+body.dark {
+    background-color: #222;
+    color: #f5f5f5;
+}
+
+body.dark .container {
+    background-color: #2c2c2c;
+    border: 1px solid #444;
+}
+
+body.dark header h1, body.dark header h2 {
+    color: #f5f5f5;
+}
+
+body.dark header h2 {
+    color: #4BA3D1; /* Lighter blue for contrast */
+}
+
+body.dark main p, body.dark main ol li {
+    color: #e0e0e0;
+}
+
+body.dark .theme-selector label {
+    color: #ccc;
+}
+
+body.dark footer img {
+    content: url("byui-logo-white.png"); /* Switch to white logo */
 }
