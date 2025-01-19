@@ -24,7 +24,7 @@ body {
     padding: 30px;
     border: 1px solid #ddd;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    background-color: #333232;
+    background-color: #ffffff;
     text-align: center;
     transition: all 0.3s ease; /* Smooth transitions */
 }
@@ -81,7 +81,7 @@ footer img {
 /* Dark theme styles */
 .dark {
     background-color: #333; /* Dark background */
-    color: rgb(241, 236, 236); /* White text */
+    color: rgb(65, 63, 63); /* White text */
 }
 
 .dark h2 {
