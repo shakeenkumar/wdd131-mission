@@ -80,18 +80,16 @@ footer img {
 
 /* Dark theme styles */
 .dark {
-    background-color: #181818; /* Darker background for better contrast */
-    color: #f0f0f0; /* Light text for better readability */
+    background-color: #333; /* Dark background */
+    color: white; /* White text */
 }
 
-/* Dark theme header styles */
-.dark header h2 {
-    color: #00A9E0; /* Light blue for dark theme for better contrast */
+.dark h2 {
+    color: #A8D8EA; /* Lighter blue for subtitle in dark theme */
 }
 
-/* Dark theme logo styling */
 .dark #logo {
-    content: url("byui-logo-white.png"); /* Switch logo to white logo */
+    content: url('byui-logo-white.png'); /* Placeholder for white logo */
 }
 
 /* Select styling */
