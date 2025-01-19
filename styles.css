@@ -66,10 +66,14 @@ body.dark {
     color: white;
 }
 
+body.dark header h1, body.dark main, body.dark footer {
+    color: white;
+}
+
 body.dark h2 {
-    color: #4BA3D1; /* Light blue for accessibility */
+    color: #4BA3D1; /* Light blue for better contrast */
 }
 
 body.dark footer img {
-    content: url("byui-logo-white.png"); /* Replace with white logo */
+    content: url("byui-logo-white.png"); /* Ensure white logo image is present */
 }
