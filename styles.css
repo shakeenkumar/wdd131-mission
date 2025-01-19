@@ -23,7 +23,7 @@ body {
     margin: 50px auto;
     padding: 30px;
     border: 1px solid #ddd;
-    box-shadow: 0 4px 12px rgba(235, 231, 231, 0.1);
+    box-shadow: 0 4px 12px rgba(242, 239, 239, 0.1);
     background-color: #f9f4f4;
     text-align: center;
     transition: all 0.3s ease; /* Smooth transitions */
