@@ -73,3 +73,18 @@ footer {
 footer img {
     width: 120px;
 }
+/* Dark theme styles */
+.dark {
+    background-color: #333;
+    color: #ffffff;
+}
+
+/* For the subtitle (h2) inside the dark theme */
+.dark h2 {
+    color: #00A9E0; /* A lighter blue color with better contrast */
+}
+
+/* For the logo inside the dark theme */
+.dark #logo {
+    content: url("byui-logo-white.png"); /* Logo with white text for dark theme */
+}
