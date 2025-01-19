@@ -1,19 +1,23 @@
-// Select the theme selector dropdown
-const themeSelector = document.getElementById('themeSelector');
+// Select elements
+const themeSelector = document.querySelector("#theme-selector");
+const body = document.body;
+const logo = document.querySelector("#logo");
 
-// Add a change event listener to the theme selector
-themeSelector.addEventListener('change', changeTheme);
-
-// Function to change the theme based on user selection
+// Function to switch themes
 function changeTheme() {
-    const currentTheme = themeSelector.value;
+    // Check the current value of the theme selector
+    const selectedTheme = themeSelector.value;
 
-    // If dark theme is selected
-    if (currentTheme === "dark") {
-        document.body.classList.add('dark'); // Add the dark class to body
-        document.getElementById('logo').src = 'byui-logo-white.png'; // Change logo to white
+    if (selectedTheme === "dark") {
+        // Apply dark theme
+        body.classList.add("dark");
+        logo.src = "byui-logo-white.png"; // Change logo to white logo for dark theme
     } else {
-        document.body.classList.remove('dark'); // Remove the dark class
-        document.getElementById('logo').src = 'byui-logo-blue.png'; // Change logo back to blue
+        // Apply light theme
+        body.classList.remove("dark");
+        logo.src = "byui-logo-blue.png"; // Change logo back to blue logo for light theme
     }
 }
+
+// Add event listener to listen for theme changes
+themeSelector.addEventListener('change', changeTheme);
